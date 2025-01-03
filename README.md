@@ -1,8 +1,7 @@
 # Python_Class
 ## Introduction to Python
 
-Python is an easy to learn, versatile programming language.
-It is widely used for web development, data analysis, artificial intelligence, and more.
+
 
 ## Python Syntax
 
@@ -13,6 +12,7 @@ Code is executed line by line.
 
 ```python
 print("Hello World!")
+```
 
 ## Python Variables
 
