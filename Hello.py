@@ -9,7 +9,7 @@ print("Hello " + name)
 
 # Naming Conversion:
 # Camel Case: myVariableName
-# Snake Case: my_vartiable_name
+# Snake Case: my_variable_name
 
 # Arithmetic Operators:
 
