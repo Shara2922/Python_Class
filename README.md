@@ -2,6 +2,15 @@
 ## Introduction to Python
 Python is a popular, high-level programming language known for its simplicity and readability. It is widely used in web development, data science, artificial intelligence, automation, and many other fields.
 
+## Content
+- [Key Features of Python](#key_features_of_python)
+- [Python Syntax](#python_syntax)
+- [Errors](#errors)
+- [Printing Variables and Variable Types](#printing_variables_and_variable_types)
+- [Input-Output Function](#input_outpurt_function)
+- [Operators](#operators)
+- [Strings](#strings)
+- [Python Homework](https://github.com/Shara2922/Python_Class/blob/main/Python_homework.py)
 ## Key Features of Python:
  ● Easy to Learn: Python has a clean and straightforward syntax, making it beginner friendly.
  
@@ -40,36 +49,27 @@ Indentation Error:
 
       Output: Indentation error.
 
-      
-## Python Variables
-
- Variables store data and are created when you assign a value.
-Creating Variables
-
-## Printing Variables
+## Printing Variables and Variable Types
 
  Use the print() function to display variables:
 
       print(x)
       print("Hello, " + name)  # String concatenation
-
-## Variable Types
-
-● Integer (int):  Integers are whole numbers.
+ 
+Integer (int):  Integers are whole numbers.
 
       my_number = 354
   
-
-● Float (float):  Floats are numbers with decimal places.When you do a calculation that results in a fraction e.g. 4 ÷ 3 the result will always bea floating point number.
+Float (float):  Floats are numbers with decimal places.When you do a calculation that results in a fraction e.g. 4 ÷ 3 the result will always bea floating point number.
 
       pi = 3.14
 
-● String (str):  A string is just a string of characters. It should be surrounded by double quotes.
+String (str):  A string is just a string of characters. It should be surrounded by double quotes.
 
       name = "Shara"
  
  
-● Boolean (bool): True or False.
+Boolean (bool): True or False.
 
       is_student = True
 
@@ -193,3 +193,28 @@ Identity Operators
       second_fruits_list = ["apple", "banana"]
       third_fruits_list = first_fruits_list
 
+## Strings
+Any data type written as text is a string. Any data under single, double or triple quote are strings. There are different string methods and built-in functions to deal with string data types. To check the length of a string use the len() method.
+### Basic String Operations:
+1. Creating Strings:
+You can create a string by enclosing text in single or double quotes:
+   str1 = "Hello, world!"
+   str2 = 'Python is fun!'
+2. String Length: Use the len() function to get the length of a string:
+    text = "Hello"
+    print(len(text))  # Output: 5
+3. Accessing Characters: You can access individual characters in a string using indexing:
+    text = "Hello"
+    print(text[0])  # Output: 'H' (first character)
+    print(text[-1]) # Output: 'o' (last character)
+4. split(delimiter): Splits the string into a list of substrings based on the delimiter.
+    text = "Hello, world!"
+    words = text.split(",")
+    print(words)  # Output: ['Hello', ' world!']
+
+### F-Strings (Formatted Strings):
+Python provides a convenient way to format strings using f-strings (available in Python 3.6 and later). You can embed expressions inside curly braces {}:
+    name = "Alice"
+    age = 25
+    greeting = f"Hello, my name is {name} and I am {age} years old."
+    print(greeting)  # Output: 'Hello, my name is Alice and I am 25 years old.
