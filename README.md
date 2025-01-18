@@ -11,7 +11,8 @@ Python is a popular, high-level programming language known for its simplicity an
 - [Operators](#operators)
 - [Strings](#strings)
 - [Lists](#lists)
-- [Tuple](#tuple)
+- [Tuples](#tuple)
+- [Dictionaries](#dictionaries)
 - [Python Homework](https://github.com/Shara2922/Python_Class/blob/main/Python_homework.py)
 
 ## Key Features of Python:
@@ -45,10 +46,10 @@ Syntax Error:
 Indentation Error:
  Indentation error occurs when the number of space at the begining of a block is not equal to the number of space assigned at the end. This is root caused of the Indentation error.
 
-      f height >= 120
-      rint("You can ride the rollercoaster")
-      lse:
-      rint("Sorry you have to grow taller to ride the rollercoaster")
+      if height >= 120
+      print("You can ride the rollercoaster")
+      else:
+      print("Sorry you have to grow taller to ride the rollercoaster")
 
       Output: Indentation error.
 
@@ -71,11 +72,9 @@ String (str):  A string is just a string of characters. It should be surrounded 
 
       name = "Shara"
  
- 
 Boolean (bool): True or False.
 
       is_student = True
-
 
 ## Input-Output Function
 The input() function in Python is used to take user input from the console. It always returns the input as a string, so you may need to convert it to other data types if required.
@@ -115,7 +114,7 @@ Multiple Inputs (Using Split)
       Enter two numbers separated by space: 10 20
       x: 10, y: 20
 
-## Operators
+## Operators :
 
  Arithmetic Operators:
 
@@ -196,7 +195,7 @@ Identity Operators
       second_fruits_list = ["apple", "banana"]
       third_fruits_list = first_fruits_list
 
-## Strings
+## Strings :
 Any data type written as text is a string. Any data under single, double or triple quote are strings. There are different string methods and built-in functions to deal with string data types. To check the length of a string use the len() method.
 ### Basic String Operations:
 1. Creating Strings:
@@ -230,7 +229,7 @@ Python provides a convenient way to format strings using f-strings (available in
        greeting = f"Hello, my name is {name} and I am {age} years old."
        print(greeting)  # Output: 'Hello, my name is Alice and I am 25 years old.
 
-## Lists
+## Lists :
 There are four collection data types in Python :
  * List is a collection which is ordered and changeable(modifiable). Allows duplicate members.
  * Tuple: is a collection which is ordered and unchangeable or unmodifiable(immutable). Allows duplicate members.
@@ -268,10 +267,10 @@ There are four collection data types in Python :
 4. Removing Elements :
  * Remove: Remove the first occurrence of a value
 
-         my_list.remove(99) # my_list = [1, 2, 3, 4, 5]
+       my_list.remove(99) # my_list = [1, 2, 3, 4, 5]
  * Pop: Remove and return an element at a specific index.
 
-         my_list.pop(2) # Removes and returns 3, my_list = [1, 2, 4, 5]
+       my_list.pop(2) # Removes and returns 3, my_list = [1, 2, 4, 5]
  * Clear: Remove all elements.
 
        my_list.clear() # my_list = []
@@ -313,7 +312,7 @@ Create a new list based on existing elements.
 
        squares = [x**2 for x in my_list if x % 2 == 0]
 
-## Tuple 
+## Tuples :
 A tuple is a collection of different data types which is ordered and unchangeable (immutable). Tuples are written with round brackets, (). Once a tuple is created, we cannot change its values. We cannot use add, insert, remove methods in a tuple because it is not modifiable (mutable). Unlike list, tuple has few methods. Methods related to tuples:
 
  * tuple(): to create an empty tuple
@@ -360,7 +359,7 @@ A tuple is a collection of different data types which is ordered and unchangeabl
 4. Tuple Unpacking
  * Assign values in a tuple to variables.
 
-        a, b, c = (1, 2, 3)
+       a, b, c = (1, 2, 3)
        print(a, b, c)  # Output: 1 2 3
  * Use * to capture remaining elements.
 
@@ -378,7 +377,7 @@ A tuple is a collection of different data types which is ordered and unchangeabl
  * Use a loop to iterate through elements.
 
        for item in my_tuple:
-      print(item)
+       print(item)
 7. Nested Tuples
 Tuples can contain other tuples.
 
@@ -391,7 +390,7 @@ Tuples can contain other tuples.
        my_list = list(my_tuple)
  * Convert List to Tuple: For immutability.
 
-        my_tuple = tuple(my_list)
+       my_tuple = tuple(my_list)
 ## Sets :
 In Python, sets are unordered collections of unique elements. They support various operations, particularly those used in mathematical set theory. Here's an overview of basic set operations:
 ### Basic Set Operations :
@@ -433,19 +432,19 @@ In Python, sets are unordered collections of unique elements. They support vario
        union_set = set1.union(set2)  # Output: {1, 2, 3, 4, 5}
       Or use |:
 
-         union_set = set1 | set2
+       union_set = set1 | set2
  * Intersection : Get common elements between sets.
 
-        intersection_set = set1.intersection(set2)  # Output: {3}
+       intersection_set = set1.intersection(set2)  # Output: {3}
       Or use &:
 
-         intersection_set = set1 & set2
+       intersection_set = set1 & set2
  * Difference : Get elements in one set but not in the other.
 
        difference_set = set1.difference(set2)  # Output: {1, 2}
       Or use -:
 
-        difference_set = set1 - set2
+       difference_set = set1 - set2
  * Symmetric Differenc : Get elements in either set but not both.
 
        symmetric_difference_set = set1.symmetric_difference(set2)  # Output: {1, 2, 4, 5}
@@ -487,7 +486,7 @@ In Python, sets are unordered collections of unique elements. They support vario
 
        print(item)
 
-## Dictionary :
+## Dictionaries :
   In Python, dictionaries are collections of key-value pairs, where keys are unique, and values can be of any type. Here's an overview of basic dictionary operations:
 1. Creating a Dictionary
  * Using curly braces
@@ -525,7 +524,7 @@ In Python, sets are unordered collections of unique elements. They support vario
        last_item = my_dict.popitem()  # Output: ("city", "New York")
  * del: Delete a key-value pair.
 
-        del my_dict["age"]  # {"name": "Alice"}
+       del my_dict["age"]  # {"name": "Alice"}
  * clear(): Remove all elements.
 
        my_dict.clear()  # {}
