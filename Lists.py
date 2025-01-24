@@ -1,4 +1,4 @@
-# Homework : Lists
+# Homework : Lists (Day 5)
 
 # 1. Declare an empty list
 list =[]

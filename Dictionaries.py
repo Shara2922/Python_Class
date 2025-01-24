@@ -1,4 +1,4 @@
-# Homework : Dictionaries
+# Homework : Dictionaries (Day 8)
 
 # 1. Create an empty dictionary called dog
 dog = {}

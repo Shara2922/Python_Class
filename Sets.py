@@ -1,3 +1,4 @@
+# Day 6-7
 # Homework : Sets
 # sets
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
