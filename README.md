@@ -13,7 +13,7 @@ Python is a popular, high-level programming language known for its simplicity an
 - [Lists](#lists)
 - [Tuples](#tuple)
 - [Dictionaries](#dictionaries)
-- [Python Homework](https://github.com/Shara2922/Python_Class/blob/main/Python_homework.py)
+- [Python Homework](#python_homework)
 
 ## Key Features of Python:
  * Easy to Learn: Python has a clean and straightforward syntax, making it beginner friendly.
@@ -581,3 +581,10 @@ In Python, sets are unordered collections of unique elements. They support vario
            "person2": {"name": "Bob", "age": 30}
        }
        print(nested_dict["person1"]["name"])  # Output: Alice
+
+## Python Homework
+- [Day 4 - Strings](https://github.com/Shara2922/Python_Class/blob/main/Python_homework.py)
+- [Day 5 - Lists](https://github.com/Shara2922/Python_Class/blob/main/Lists.py)
+- [Day 6 - 7 Tuple & Sets](https://github.com/Shara2922/Python_Class/blob/main/Sets.py)
+- [Day 8 - Dictionaries](https://github.com/Shara2922/Python_Class/blob/main/Dictionaries.py)
+- [Day 9 - Conditionals](https://github.com/Shara2922/Python_Class/blob/main/conditionals_ex.py)
