@@ -69,3 +69,18 @@ scores = [95, 72, 67, 58, 40, -5, 105]
 
 for s in scores:
     print(f"Score: {s} => Grade: {get_grade(s)}")
+
+# 5. The following list contains some fruits:
+# fruits = ['banana', 'orange', 'mango', 'lemon']
+# If a fruit doesn't exist in the list add the fruit to the list and print the modified list. If the fruit exists print('That fruit already exist in the list')
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+
+fruit_to_add = input("Enter a fruit: ").lower()
+
+if fruit_to_add in fruits:
+    print("That fruit already exists in the list")
+else:
+    fruits.append(fruit_to_add)
+    print("Updated fruit list:", fruits)
+
