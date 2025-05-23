@@ -23,3 +23,20 @@ for i in range(101):
     if i % 2 == 0:
         print(i, end=" ")
 print()
+
+# 4. Use for loop to iterate from 0 to 100 and print only odd numbers
+for i in range(101):
+    if i % 2 != 0:
+        print(i, end=" ")
+print()
+# 5. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+sum = 0
+for i in range(101):
+    sum += i
+print("Sum of all numbers from 0 to 100 is:", sum)
+# 6. Use for loop to iterate from 0 to 100 and print the sum of all even numbers.
+sum = 0
+for i in range(101):
+    if i % 2 == 0:
+        sum += i
+print("Sum of all even numbers from 0 to 100 is:", sum)
