@@ -38,3 +38,18 @@ def calculate_slope(y2, y1, x2, x1):
     if x2 - x1 == 0:
         return "Slope is undefined (vertical line)."
     return (y2 - y1) / (x2 - x1)
+# 8. Quadratic equation is calculated as follows: ax² + bx + c = 0.
+# Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
+def solve_quadratic_eqn(a, b, c):
+    if a == 0:
+        return "Coefficient 'a' cannot be zero."
+    discriminant = b**2 - 4*a*c
+    if discriminant < 0:
+        return "No real solutions."
+    elif discriminant == 0:
+        x = -b / (2 * a)
+        return f"One solution: x = {x}"
+    else:
+        x1 = (-b + math.sqrt(discriminant)) / (2 * a)
+        x2 = (-b - math.sqrt(discriminant)) / (2 * a)
+        return f"Two solutions: x1 = {x1}, x2 = {x2}"
