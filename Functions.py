@@ -53,3 +53,10 @@ def solve_quadratic_eqn(a, b, c):
         x1 = (-b + math.sqrt(discriminant)) / (2 * a)
         x2 = (-b - math.sqrt(discriminant)) / (2 * a)
         return f"Two solutions: x1 = {x1}, x2 = {x2}"
+    # 9. Declare a function called print_list which takes a list as a parameter and prints each item in the list.
+def print_list(items):
+    if isinstance(items, list):
+        for item in items:
+            print(item)
+    else:
+        return "Input must be a list."
