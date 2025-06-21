@@ -60,3 +60,17 @@ def print_list(items):
             print(item)
     else:
         return "Input must be a list."
+# 9. Write a function called is_prime, which checks if a number is prime.
+def is_prime(n):
+    if n <= 1:
+        return False  # 0 and 1 are not prime numbers
+    if n == 2:
+        return True  # 2 is the only even prime number
+    if n % 2 == 0:
+        return False  # Exclude even numbers greater than 2
+    
+    # Check for factors from 3 to sqrt(n), skipping even numbers
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n % i == 0:
+            return False
+    return True
